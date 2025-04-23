@@ -1,14 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {  Poppins, PT_Serif} from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/blog/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight:['200','400','600','800']
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const pt_serif = PT_Serif({
+  variable: "--font-pt_serif",
   subsets: ["latin"],
+  weight:['400']
 });
 
 export const metadata = {
@@ -18,10 +21,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning className="">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${pt_serif.variable} antialiased flex flex-col bg-white w-full min-h-screen gap-[100]`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
