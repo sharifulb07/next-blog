@@ -1,6 +1,7 @@
 import {  Poppins, PT_Serif} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/blog/Navbar";
+import { appProvider } from "@/components/blog/context/AppContext";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,6 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <appProvider>
     <html lang="en" suppressHydrationWarning className="">
       <body
         className={`${poppins.variable} ${pt_serif.variable} antialiased flex flex-col bg-white w-full min-h-screen `}
@@ -29,5 +31,6 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
+    </appProvider>
   );
 }

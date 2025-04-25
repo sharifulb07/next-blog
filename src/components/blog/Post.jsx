@@ -4,7 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 export default function Post({photo, category, title, date, time, description }) {
   return (
-    <div className="border rounded-lg w-full h-full p-6  bg-white shadow-md cursor-pointer">
+    <div className="border border-white/60 rounded-lg w-full h-full p-6  bg-white shadow-lg cursor-pointer">
       {photo && (
         <Image
           src={photo}

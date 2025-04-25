@@ -5,6 +5,8 @@
 @theme{
   --color-off-white:#F5F5F5;
   --color-menu-color: #6D7280;
+  --color-cardbg:#C4C4C4;
+  --color-footerbg:#272343;
   --font-poppins: Poppins;
   --font-pt_serif:PT_Serif;
 }
