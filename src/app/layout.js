@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className="">
       <body
-        className={`${poppins.variable} ${pt_serif.variable} antialiased flex flex-col bg-white w-full min-h-screen gap-[100]`}
+        className={`${poppins.variable} ${pt_serif.variable} antialiased flex flex-col bg-white w-full min-h-screen `}
       >
         <Navbar />
         {children}
