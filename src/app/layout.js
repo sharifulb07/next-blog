@@ -4,15 +4,17 @@ import Navbar from "@/components/blog/Navbar";
 import { appProvider } from "@/components/blog/context/AppContext";
 
 const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight:['200','400','600','800']
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  fallback: ['system-ui', 'arial']
 });
 
 const pt_serif = PT_Serif({
-  variable: "--font-pt_serif",
-  subsets: ["latin"],
-  weight:['400']
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  fallback: ['Georgia', 'serif']
 });
 
 export const metadata = {
