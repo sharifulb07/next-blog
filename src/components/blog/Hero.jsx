@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="flex bg-amber-400 flex-col md:flex-row">
       <div className="left w-full md:w-[40%] bg-blue-500 relative">
         <Image src={left} alt="hero-left" className="h-[100%] w-[100%]" />
-        <div className="absolute left-5 top-30 md:left-50 z-50">
+        <div className="absolute left-3 top-30 md:left-50 z-50">
           <CardCarousel />
         </div>
       </div>

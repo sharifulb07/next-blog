@@ -95,8 +95,8 @@ const CardCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center ">
-      <div className="relative w-full max-w-md overflow-hidden">
+    <div className="flex flex-col items-center  ">
+      <div className="relative w-full  max-w-sm md:max-w-md overflow-hidden">
         <div
           className="flex transition-transform duration-300 ease-in-out"
           style={{

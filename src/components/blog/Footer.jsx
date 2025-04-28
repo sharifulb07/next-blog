@@ -88,8 +88,8 @@ export default function Footer() {
           <h1 className="text-white text-[24px] font-normal mb-6 flex w-full">
             Newsletter{" "}
           </h1>
-          <div className="flex md:flex-col lg:flex-row w-full gap-4">
-            <form action="">
+          <div className="  w-[80%] flex md:flex-col lg:flex-row lg:w-full gap-4">
+            <form action="" >
               <input
                 text="email"
                 id="email"
