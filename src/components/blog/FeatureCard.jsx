@@ -36,8 +36,8 @@ export default function FeaturedCard({
   time,
 }) {
   return (
-    <div className="flex gap-3" key={id}>
-      <div>
+    <div className="flex gap-5 " key={id}>
+      <div className="flex flex-col gap-5">
         <Image
           src={photo}
           width={300}
@@ -45,7 +45,7 @@ export default function FeaturedCard({
           alt="featured image"
           className="w-full min-w-full h-[300px] "
         />
-        <div className="w-[95%] z-10">
+        <div className="w-[95%] h-[250px] z-10">
           <Post
             category={category}
             title={title}

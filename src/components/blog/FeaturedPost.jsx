@@ -28,7 +28,7 @@ const cards = [
 
 export default function FeaturedPost() {
   return (
-    <section className="px-[10%] flex flex-col gap-[40] ">
+    <section className="px-[10%] flex flex-col gap-[40px] ">
       <SectionTitle title={"Featured Post"} />
       <div className="flex gap-3 flex-col md:flex-row ">
       {cards.map((item) => (

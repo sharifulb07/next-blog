@@ -1,6 +1,9 @@
+import Footer from '@/components/blog/Footer'
 import React from "react";
-import SectionTitle from "./SectionTitle";
-import Post from "./Post";
+import SectionTitle from "@/components/blog/SectionTitle";
+
+import Post from '@/components/blog/Post';
+import Image from 'next/image';
 
 
 const cards = [
@@ -56,22 +59,31 @@ const cards = [
   },
 ];
 
-export default function RecentPost() {
+
+export default function Fashion() {
   return (
-    <section className="px-[10%] flex flex-col gap-[40]">
-      <SectionTitle title={"Recent Post"} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2">
-        {cards.map((item) => (
-          <Post
-            category={item.category}
-            title={item.title}
-            description={item.description}
-            date={item.date}
-            time={item.time}
-            key={item.id}
-          />
-        ))}
-      </div>
-    </section>
-  );
+    <div>
+
+
+      <section className="px-[10%] flex flex-col gap-[40] mb-10">
+
+
+        <Image src={"https://images.unsplash.com/photo-1498551077033-6749074b4737?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZhc2hpb24lMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D"} width={800} height={400} alt='walpaper' className='w-full h-[400px]' />
+            <SectionTitle title={"Fashion Post"} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2">
+              {cards.map((item) => (
+                <Post
+                  category={item.category}
+                  title={item.title}
+                  description={item.description}
+                  date={item.date}
+                  time={item.time}
+                  key={item.id}
+                />
+              ))}
+            </div>
+          </section>
+      <Footer />
+    </div>
+  )
 }
